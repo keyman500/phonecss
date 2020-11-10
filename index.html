@@ -1,66 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* The device with borders */
-.smartphone {
-  position: relative;
-  width: 360px;
-  height: 640px;
-  margin: auto;
-  border: 16px black solid;
-  border-top-width: 60px;
-  border-bottom-width: 60px;
-  border-radius: 36px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="devices.min.css" type="text/css">
+    <style>
+        .flex-container {
+  display: flex;
+  justify-content: center;
 }
 
-/* The horizontal line on the top of the device */
-.smartphone:before {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 5px;
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #333;
-  border-radius: 10px;
-}
-
-/* The circle on the bottom of the device */
-.smartphone:after {
-  content: '';
-  display: block;
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  left: 50%;
-  bottom: -65px;
-  transform: translate(-50%, -50%);
-  background: #333;
-  border-radius: 50%;
-}
-
-/* The screen (or content) of the device */
-.smartphone .content {
-  width: 360px;
-  height: 640px;
-  background: white;
-}
-iframe{
-    overflow:hidden;
-}
-</style>
+    </style>
 </head>
 <body>
-
-<div class="smartphone">
-  <div class="content">
-    <iframe seamless="seamless"src="https://marc-personal.hci.repl.co/" style="width:100%;border:none;height:100%;overflow:hidden;" />
-  </div>
+   
+ <a href="/excess.html">next phone</a>
+<div class="flex-container">
+   <div> 
+    <div class="marvel-device note8">
+    <div class="inner"></div>
+    <div class="overflow">
+        <div class="shadow"></div>
+    </div>
+    <div class="speaker"></div>
+    <div class="sensors"></div>
+    <div class="more-sensors"></div>
+    <div class="sleep"></div>
+    <div class="volume"></div>
+    <div class="camera"></div>
+    <div class="screen">
+         <iframe seamless="seamless"src="https://marc-personal.hci.repl.co/" style="width:100%;border:none;height:100%;overflow:hidden;" />
+        <!-- Content goes here -->
+    </div>
 </div>
-
+    
+    </div>
+    </div>
 </body>
 </html>
